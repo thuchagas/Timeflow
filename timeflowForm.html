@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header__Form">
+        <section class="topbar__header">
+            <div class="topbar__back">
+                <img class="topbar__imgArrow" src="./img/fi-rr-arrow-left.png" alt="arrow left for back">
+                <p>Back</p>
+            </div>
+            <div class="topbar__addTasks">
+                <h1>Add task</h1>
+            </div>
+            <div class="topbar__close">
+                <img class="topbar__imgClose" src="./img/Vector.png" alt="img close">
+                <p>Close</p>
+            </div>
+        </section>
+    </header>
+    <main class="main__formcard">
+        <section class="formcard__title">
+            <h1>Add new task</h1>
+        </section>
+        <section class="section__formCard" id="title__card">
+            <div class="section__title--formCard">
+                <form class="TitleForm" id="title__form">
+                    <label for="Title">
+                        <b>Title</b>
+                    </label>
+                    <br>
+                    <input type="text" id="title"
+                    placeholder="Add a title"
+                    name="titleline" required>
+                    <br>
+                    <br>
+                    <label for="description">
+                        <b>Description</b>
+                    </label>
+                    <br>
+                    <input type="description" id="description__form"
+                    placeholder="Enter description"
+                    name="description" required>  
+                    <br>
+                    <br>
+                    <label for="date">
+                        <b>Date</b>
+                    </label>
+                    <br>
+                    <input type="date" id="date__form"
+                    placeholder="Enter description"
+                    src="./img/fi-rr-calendar.png" alt="img calendar"
+                    name="date"required>  
+                    <br>
+                    <br>
+                    <label for="startTime">
+                        <b>Start time</b>
+                    </label>
+                    <br>
+                    <input type="time" id="time__form"
+                    src="./img/fi-rr-clockblue.png" alt="img clock"
+                    name="time"required>  
+                    <br>
+                    <div class="form__priority">
+                    <label for="priority">
+                        <b>Priority</b>
+                    </label>
+                        <div class="priority__high">
+                          <input type="radio" id="high__form" name="High" value="high" checked />
+                          <label for="high">High</label>
+                        </div>
+                      
+                        <div>
+                          <input type="radio" id="medium__form" name="Medium" value="Medium" />
+                          <label for="medium">Medium</label>
+                        </div>
+                      
+                        <div>
+                          <input type="radio" id="low__form" name="low" value="low" />
+                          <label for="low">Low</label>
+                        </div>
+            </div>
+                    <div class="button__createTask__form">
+                        <input type="submit" value="Create a new task" class="button__createTask" id="btnCreatetask">
+                    </div>
+                    
+                </form>
+    </main>
+</body>
+</html>
