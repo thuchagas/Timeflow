@@ -1,16 +1,22 @@
 // Funcionalidad Button "back"
-document.getElementById("btn__back").addEventListener("click", function() {
-        history.back();
+document.addEventListener("DOMContentLoaded", function () {
+    const backButton  = document.getElementById("btnBack");
+
+backButton.addEventListener("click", function () {
+       window.location.href = "timeflowPage2.html"; 
+    });
 })
 
 // Funcionalidad Button "close"
 document.addEventListener("DOMContentLoaded", function () {
-    const closeButton  = document.getElementById("btn__close");
+    const closeButton  = document.getElementById("btnClose");
 
 closeButton.addEventListener("click", function () {
-       window.location.href = "timeflowPage2.html";  
+       window.location.href = "timeflow.html";  
     });
 });
+
+
 
 // Funcionalidad al button "create a new task"
 document.addEventListener("DOMContentLoaded", function () {
@@ -34,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
             priority: priorityHighInput.checked ? "High" : (priorityMediumInput.checked ? "Medium" : "Low")
         };
      
-        // Aquí puedes hacer lo que quieras con los datos de la tarea,
-        // como agregarlos a una lista de tareas, enviarlos a un servidor, etc.
         console.log("Nueva tarea:", task);
     });
 });
