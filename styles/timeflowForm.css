@@ -1,0 +1,75 @@
+.header__Form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+}
+
+.topbar__back,
+.topbar__close {
+    display: flex;
+    align-items: center;
+}
+
+.btn__back,
+.btn__close {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.topbar__imgArrow,
+.topbar__imgClose {
+    width: 20px;
+    height: 20px;
+}
+
+.topbar__addTasks {
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header__Form {
+        flex-direction: column;
+    }
+
+    .topbar__back,
+    .topbar__close {
+        width: 50%;
+        text-align: center;
+    }
+
+    .topbar__addTasks {
+        order: -1;
+    }
+}
+/*En este ejemplo, se establece una media query usando @media para pantallas más pequeñas (hasta 768px de ancho). En esta media query, los elementos en la parte superior (topbar__back y topbar__close) ocupan cada uno el 50% del ancho y el título (topbar__addTasks) se coloca antes de los elementos de la barra superior mediante la propiedad order: -1.
+
+
+
+
+
+
+/* button Add task*/
+.button__createTask {
+  background-color: #5451D6;
+  color: white;
+  width: 343px;
+  height: 48px;
+  border-radius: 16px;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 768px) {
+    .button__createTask {
+        width: 100%;
+    }}
