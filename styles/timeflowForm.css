@@ -33,8 +33,8 @@
 h1 {
     margin: 0;
 }
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
+/* Media query  */
+@media (max-width: 390px) and (max-height: 844px) {
     .header__Form {
         flex-direction: column;
     }
@@ -49,7 +49,7 @@ h1 {
         order: -1;
     }
 }
-/*En este ejemplo, se establece una media query usando @media para pantallas más pequeñas (hasta 768px de ancho). En esta media query, los elementos en la parte superior (topbar__back y topbar__close) ocupan cada uno el 50% del ancho y el título (topbar__addTasks) se coloca antes de los elementos de la barra superior mediante la propiedad order: -1.
+
 
 
 

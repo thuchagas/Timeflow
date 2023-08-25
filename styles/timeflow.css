@@ -1,0 +1,12 @@
+.mainHome{
+    background-color: #8B78FF;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.main__sectionTwo{
+    background-color: white;
+    width: 375px;
+    height: 351px;
+    border-radius: 30px;
+}

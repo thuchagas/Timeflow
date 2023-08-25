@@ -108,6 +108,58 @@ async function getTasks() {
             taskCard.appendChild(taskDetails);
             taskContainer.appendChild(taskCard);
 
+            // Funcionalidad Button "delete task"
+            const deleteTaskButton = document.createElement('button');
+            deleteTaskButton.textContent = "Delete";
+            deleteTaskButton.className = "sectionThree__taskOne__button";
+            deleteTaskButton.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                fetch(`http://localhost:3000/tasks/${task.id}`, {
+                    method: "DELETE"
+                })
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log("Tarea eliminada:", data);
+                    getTasks();
+                });
+            }
+            );
+            taskCard.appendChild(deleteTaskButton);
+
+            // Funcionalidad Button "edit task"
+            const editTaskButton = document.createElement('button');
+            editTaskButton.textContent = "Edit";
+            editTaskButton.className = "sectionThree__taskOne__button";
+            editTaskButton.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                fetch(`http://localhost:3000/tasks/${task.id}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        title: "New title",
+                        description: "New description",
+                        date: "New date",
+                        time: "New time",
+                        priority: "New priority"
+                    })
+                })
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log("Tarea editada:", data);
+                    getTasks();
+                });
+            }
+            );
+            taskCard.appendChild(editTaskButton);
+
         });
     } catch (error) {
         console.error("Error obteniendo tareas:", error);
@@ -118,3 +170,4 @@ async function getTasks() {
 window.addEventListener('load', () => {
     getTasks();
 });
+
