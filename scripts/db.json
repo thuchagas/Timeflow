@@ -1,9 +1,84 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Dinner",
+      "description": "With family",
+      "date": "2023-08-26",
+      "start time": "02:00",
+      "priority": "High"
+    },
+    {
+      "title": "Dinner",
+      "description": "With family",
+      "date": "2023-08-25",
+      "time": "17:32",
+      "priority": "Medium",
+      "id": 2
+    },
+    {
+      "title": "Dinner",
+      "description": "With family",
+      "date": "2023-08-25",
+      "time": "16:37",
+      "priority": "Medium",
+      "id": 3
+    },
+    {
+      "title": "thuanny",
+      "description": "With family",
+      "date": "2023-08-25",
+      "time": "18:40",
+      "priority": "High",
+      "id": 4
+    },
+    {
+      "title": "",
+      "description": "",
+      "date": "",
+      "time": "",
+      "priority": "High",
+      "id": 5
+    },
+    {
+      "title": "thuanny",
+      "description": "fhj",
+      "date": "2023-08-26",
+      "time": "08:12",
+      "priority": "Medium",
+      "id": 6
+    },
+    {
+      "title": "",
+      "description": "",
+      "date": "",
+      "time": "",
+      "priority": "High",
+      "id": 7
+    },
+    {
+      "title": "thuanny",
+      "description": "With family",
+      "date": "2023-08-31",
+      "time": "12:20",
+      "priority": "Medium",
+      "id": 8
+    },
+    {
+      "title": "Dinner",
+      "description": "With family",
+      "date": "2023-08-29",
+      "time": "07:22",
+      "priority": "High",
+      "id": 9
+    },
+    {
+      "title": "",
+      "description": "",
+      "date": "",
+      "time": "",
+      "priority": "High",
+      "id": 10
+    }
+  ]
+}
