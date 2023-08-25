@@ -7,6 +7,14 @@ getStartedButton.addEventListener("click", function () {
     });
 });
 
+ // Agregar funcionalidad al botón "New task"
+ document.addEventListener("DOMContentLoaded", function () {
+    const getNewtask = document.getElementById("btnNewtask");
+
+getNewtask.addEventListener("click", function () {
+       window.location.href = "timeflowForm.html";  
+    });
+});
 
 
 

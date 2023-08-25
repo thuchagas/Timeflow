@@ -83,7 +83,7 @@ async function getTasks() {
             const taskCard = document.createElement('div');
             taskCard.className = "sectionThree__taskOne";
   
-            const taskTitle = document.createElement('h4');
+            const taskTitle = document.createElement('h3');
             taskTitle.textContent = task.title;
             taskCard.appendChild(taskTitle);
   
@@ -110,7 +110,7 @@ async function getTasks() {
 
             // Funcionalidad Button "delete task"
             const deleteTaskButton = document.createElement('button');
-            deleteTaskButton.textContent = "Delete";
+            //deleteTaskButton.textContent = "Delete";
             deleteTaskButton.className = "sectionThree__taskOne__button";
             deleteTaskButton.addEventListener("click", function (event) {
                 event.preventDefault();
@@ -127,6 +127,14 @@ async function getTasks() {
                 });
             }
             );
+
+            // Crear un elemento de imagen
+            const imageElement = document.createElement("img");
+            //imageElement.src = "Button-delete.png";
+            imageElement.alt = "Delete";
+
+            // Añadir la imagen al botón
+            deleteTaskButton.appendChild(imageElement);
             taskCard.appendChild(deleteTaskButton);
 
             // Funcionalidad Button "edit task"

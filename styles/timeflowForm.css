@@ -1,9 +1,16 @@
 .header__Form {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #f2f2f2;
+}
+
+.topbar__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .topbar__back,
